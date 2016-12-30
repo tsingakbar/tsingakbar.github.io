@@ -1,7 +1,7 @@
 # 于清
 ## 高级C++软件工程师
 
-> [下载PDF版简历](yuqing_zh.pdf)(2016/10更新)
+> [下载PDF版简历](yuqing_zh.pdf)(2016/12更新)
 > [yuqing.richie@foxmail.com](mailto:yuqing.richie@foxmail.com)
 > 13001123387
 
