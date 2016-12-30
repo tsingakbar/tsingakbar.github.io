@@ -61,7 +61,7 @@
 
  - 用nginx实现的文件缓存集群
  - 大内存redis集群，以及尝试使用facebook的[rocksdb](http://rocksdb.org/)替换其中的redis降低内存成本
- - 即时通信系统集群、敏感词过滤服务
+ - 即时通信（TCP和websocket）系统集群、敏感词过滤服务
  - mysql中间件二次开发
  - 以及一些log收集、运维和部署的系统（ruby为主）
 
