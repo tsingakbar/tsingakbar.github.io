@@ -17,7 +17,7 @@
           var html = converter.makeHtml(xhr.responseText);
           document.getElementsByTagName('body')[0].innerHTML = html;
         } else {
-          document.getElementsByTagName('body')[0].innerHTML = `<h2>fetch yuqing_zh.md failure: ${xhr.status}</h2>`;
+          document.getElementsByTagName('body')[0].innerHTML = `<h2>fetch original markdown.failure: ${xhr.status}</h2>`;
         }
       };
       xhr.send();
