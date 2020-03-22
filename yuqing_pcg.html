@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>于清简历</title>
+  <script type="application/javascript" src="showdown.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="showdown.my.css">
+  <script lang="javascript">
+    function redraw() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'yuqing_pcg.md');
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          var converter = new showdown.Converter();
+          var html = converter.makeHtml(xhr.responseText);
+          document.getElementsByTagName('body')[0].innerHTML = html;
+        } else {
+          document.getElementsByTagName('body')[0].innerHTML = `<h2>fetch original markdown failure: ${xhr.status}</h2>`;
+        }
+      };
+      xhr.send();
+    }
+    window.onload = function () {
+      redraw();
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
